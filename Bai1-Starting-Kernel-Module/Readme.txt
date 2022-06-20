@@ -23,6 +23,10 @@
         module_init(hello_world_init);
         module_exit(hello_world_static);
     +, Để build kernel module:
+        Makefile
+        --> Ta cần insmod hello.ko vào hệ thống để chạy
+            insmod hello.ko
+        --> Muốn gỡ ra khỏi hệ thống dùng Lệnh
 
     +, để in log thì dùng lênh:
         +, dmesg | tail
@@ -37,5 +41,9 @@
         
     --> Khái niệm cross compile: build 2 máy khác nhau, khác kiến trúc nhưng máy kia vẫn chạy được
         --> Để cross compile được thì ta cần toolchain của kiến trúc ta muốn cross compile qua. 
+    
+    +, Ta có trình biên dịch trên beagle bone Là    
+            gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf
+
 
     
