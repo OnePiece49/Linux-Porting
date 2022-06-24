@@ -6,7 +6,6 @@ PREFIX := arm-linux-gnueabihf-
 CC := gcc
 LD := ld
 
-
 all :
 	make ARCH=arm CROSS_COMPILE=$(TOOLCHAIN)/$(PREFIX) -C $(BBB_KERNEL) M=$(shell pwd) modules
 
